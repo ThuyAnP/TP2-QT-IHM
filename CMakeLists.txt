@@ -19,6 +19,9 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        maforme.cpp
+        maforme.h
+        maforme.ui
 )
 qt_add_resources(PROJECT_SOURCES ressources.qrc)
 
