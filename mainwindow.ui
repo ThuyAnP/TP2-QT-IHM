@@ -17,6 +17,9 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QWidget" name="horizontalWidget" native="true">
+      <property name="styleSheet">
+       <string notr="true">#PanneauArretDeconnexion { background-color: qlineargradient(spread:reflect, x1:0.5, y1:0, x2:0, y2:0, stop:0 rgba(91, 204, 233, 100), stop:1 rgba(32, 80, 96, 100)); }</string>
+      </property>
       <layout class="QHBoxLayout" name="PanneauArretDeconnexion">
        <item>
         <widget class="QLabel" name="DateHeureCourante">
@@ -112,7 +115,7 @@
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">#FormulaireDeConnexion { border: 1px solid; }</string>
+         <string notr="true">#FormulaireDeConnexion { background: rgba(0, 0, 0, 80); border-radius: 8px; }</string>
         </property>
         <layout class="QVBoxLayout" name="ConnexionContainer">
          <property name="leftMargin">
@@ -131,6 +134,9 @@
           <layout class="QHBoxLayout" name="nomutilisateurLayout">
            <item>
             <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">QLabel { color: white; }</string>
+             </property>
              <property name="text">
               <string>NomUtilisateur</string>
              </property>
@@ -144,6 +150,9 @@
                <height>25</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit { border-radius: 3px; }</string>
+             </property>
              <property name="text">
               <string>nomutilisateur</string>
              </property>
@@ -155,6 +164,9 @@
           <layout class="QHBoxLayout" name="motdepasseLayout">
            <item>
             <widget class="QLabel" name="label_2">
+             <property name="styleSheet">
+              <string notr="true">QLabel { color: white; }</string>
+             </property>
              <property name="text">
               <string>MotDePasse</string>
              </property>
@@ -167,6 +179,9 @@
                <width>0</width>
                <height>25</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit { border-radius: 3px; }</string>
              </property>
              <property name="text">
               <string>motdepasse</string>
@@ -193,6 +208,15 @@
          </item>
          <item>
           <widget class="QPushButton" name="BoutonConnexion">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+color: white;
+background-color: #27a9e3;
+border-width: 0px;
+border-radius: 3px;
+} QPushButton:hover { background-color: #66c011; }</string>
+           </property>
            <property name="text">
             <string>Connexion</string>
            </property>
