@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->FormMessage = new MaForme() ;
+    this->FormMessage = new MaForme();
 }
 
 MainWindow::~MainWindow()
@@ -33,6 +33,7 @@ void MainWindow::on_BoutonArret_clicked()
     {
         //seulement le message d'arrêt qui se ferme
     }
+    testForm();
 }
 
 void MainWindow::testForm()
